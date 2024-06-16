@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: linear-gradient(45deg, blue, purple);
+    color: white;
+    font-size: 12px;
+  }
+  
+  .container{
+    width: 100vw;
+    
+  }
+  
+  .side-nav{
+    height: 100vh;
+    background: #555;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition: width 0.4s;
+  }
+  
+  .side-nav:hover{
+    width: 40%;
+    
+  }
+  
+  
+  
+  
+  .side-nav .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .side-nav .user p{
+    display: none;
+  }
+  .side-nav:hover .user p{
+    display: block;
+  }
+  
+  .side-nav .user div{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .side-nav .user i{
+    font-size: 20px;
+    
+    
+  }
+  
+  
+  .side-nav .menu-list ul li{
+    display: flex;
+    margin: 10px;
+  }
+  .side-nav .menu-list ul li i,p{
+    padding: 5px;
+  }
+  .menu-list ul li p{
+    display: none;
+  }
+  
+  .side-nav:hover .menu-list ul li p{
+    display: block;
+  }
+  
+  .log-out{
+    display: flex;
+    margin: 10px;
+  }
+  
+  .log-out i,p{
+    padding: 5px;
+  }
+  .log-out p{
+    display: none;
+  }
+  .side-nav:hover .log-out p{
+    display: block;
+  }
+  
+  
+  @media screen and (min-width: 768px){
+    body{
+      font-size: 16px;
+    }
+    
+    .side-nav{
+      width: 10%;
+    }
+    .side-nav:hover{
+      width: 20%;
+    }
+  }
